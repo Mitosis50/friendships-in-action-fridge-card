@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Friendships IN ACTION! Fridge Card</title>
+<style>
+  @page { size: letter; margin: 0.4in; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Trebuchet MS, Arial, sans-serif; color: #1B2A3A; background: #F7F3E9; }
+  .bar { position: sticky; top: 0; display: flex; justify-content: space-between; align-items: center;
+         gap: 12px; padding: 12px 20px; background: #1B4332; color: #FFFCF6; }
+  .bar h1 { margin: 0; font-size: 22px; }
+  .bar p { margin: 2px 0 0; font-size: 12px; color: #E9C46A; }
+  button { background: #F4D03F; color: #1B4332; border: 0; border-radius: 999px; padding: 10px 18px;
+           font-weight: 700; cursor: pointer; font-size: 15px; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 20px; }
+  .sheet { background: #FFFCF6; border-radius: 12px; overflow: hidden; margin-bottom: 24px;
+           box-shadow: 0 8px 24px rgba(0,0,0,.12); }
+  .head { background: #1B4332; color: #FFFCF6; padding: 16px 20px; }
+  .head .kicker { color: #E9C46A; font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+  .head h2 { margin: 4px 0 0; font-size: 24px; }
+  .week { margin: 16px; background: #F4D03F; color: #1B4332; border-radius: 8px; padding: 12px 16px; font-weight: 700; }
+  .skill { margin: 0 16px 12px; border: 1px solid #D5CBB8; border-radius: 8px; padding: 14px 16px; background: #F7F3E9; }
+  .skill h3 { margin: 0 0 6px; }
+  .n { display: inline-flex; width: 26px; height: 26px; border-radius: 50%; color: #fff; align-items: center;
+       justify-content: center; font-size: 13px; margin-right: 8px; }
+  .label { font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #5C6B73; }
+  .words span { display: inline-block; background: #F3EEE0; border-radius: 4px; padding: 4px 8px; margin: 4px 4px 0 0;
+                font-style: italic; font-size: 13px; }
+  .gold { margin: 0 16px 16px; background: #1D3557; color: #FFFCF6; border-radius: 8px; padding: 14px 16px; }
+  .gold .kicker { color: #E9C46A; font-size: 11px; font-weight: 700; letter-spacing: .06em; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 16px; }
+  .card { background: #F7F3E9; border: 1px solid #D5CBB8; border-radius: 8px; padding: 12px; }
+  .navy { background: #1D3557; color: #FFFCF6; border: 0; }
+  .navy strong { color: #E9C46A; }
+  .listen { margin: 0 16px 12px; background: #2D6A4F; color: #FFFCF6; border-radius: 8px; padding: 14px 16px; }
+  .listen .kicker { color: #F4D03F; font-size: 11px; font-weight: 700; }
+  footer { text-align: center; font-size: 12px; color: #5C6B73; padding: 8px 16px 20px; }
+  @media print {
+    .bar { display: none !important; }
+    body { background: #fff; }
+    .wrap { max-width: none; padding: 0; }
+    .sheet { box-shadow: none; border-radius: 0; page-break-after: always; margin: 0; }
+    .sheet:last-of-type { page-break-after: auto; }
+  }
+  @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="bar">
+  <div>
+    <h1>Friendships IN ACTION! Fridge Card</h1>
+    <p>Letter, color, two-sided. Click Print, then tape it on the fridge.</p>
+  </div>
+  <button onclick="window.print()">Print</button>
+</div>
+<div class="wrap">
+<article class="sheet">
+  <div class="head">
+    <div class="kicker">Keep this on the fridge · Pick ONE idea each week</div>
+    <h2>Friendships IN ACTION!</h2>
+    <div style="color:#D8F3DC;font-size:13px">Dr. Elbert Basa, MD, BCBA Candidate</div>
+  </div>
+  <div class="week">
+    THIS WEEK — pick ONE skill &nbsp; ☐ Taking turns &nbsp; ☐ Flexibility &nbsp; ☐ Camaraderie<br/>
+    <span style="font-size:12px;font-weight:600">Four-week check-in: ☐ Week 1 &nbsp; ☐ Week 2 &nbsp; ☐ Week 3 &nbsp; ☐ Week 4</span>
+  </div>
+  <section class="skill">
+    <h3><span class="n" style="background:#0E7C7B">1</span>Taking Turns</h3>
+    <div class="label">What to do at home</div>
+    <p>Board games, card games, or toss a ball. Take turns talking at dinner. Pass the salt.</p>
+    <div class="label">Words to use</div>
+    <div class="words">
+      <span style="color:#0E7C7B">“My turn”</span>
+      <span style="color:#0E7C7B">“Your turn”</span>
+      <span style="color:#0E7C7B">“First you, then me.”</span>
+      <span style="color:#0E7C7B">“You waited so patiently!”</span>
+    </div>
+  </section>
+  <section class="skill">
+    <h3><span class="n" style="background:#E76F51">2</span>Flexibility</h3>
+    <div class="label">What to do at home</div>
+    <p>Make a small change with a warning. Offer two real choices. Nudge the order of a routine. Model “no big deal.”</p>
+    <div class="label">Words to use</div>
+    <div class="words">
+      <span style="color:#E76F51">“In two minutes we’ll switch.”</span>
+      <span style="color:#E76F51">“Which one do you want?”</span>
+      <span style="color:#E76F51">“Oops — no big deal.”</span>
+    </div>
+  </section>
+  <section class="skill">
+    <h3><span class="n" style="background:#2D6A4F">3</span>Camaraderie</h3>
+    <div class="label">What to do at home</div>
+    <p>Greet at the door. One dinner question. Cheer + high-fives. Turn toward the speaker — do not force eye contact.</p>
+    <div class="label">Words to use</div>
+    <div class="words">
+      <span style="color:#2D6A4F">“What was one good thing today?”</span>
+      <span style="color:#2D6A4F">“Nice job!”</span>
+      <span style="color:#2D6A4F">“High five!”</span>
+      <span style="color:#2D6A4F">“Hi.”</span>
+    </div>
+  </section>
+  <div class="gold">
+    <div class="kicker">THE GOLDEN RULE</div>
+    Celebrate every small step. Catch them doing it right and say so — that is how skills grow. Reinforce the skill. Never punish the miss.
+  </div>
+  <footer>Dr. Elbert Basa · (818) 640-8947 · basamd@protonmail.com</footer>
+</article>
+<article class="sheet">
+  <div class="head">
+    <div class="kicker">Flip side · How we talk · One change for seven days</div>
+    <h2>Autism-friendly communication</h2>
+  </div>
+  <div class="grid">
+    <div class="card"><strong><span class="n" style="background:#0E7C7B">1</span>Wait 10</strong><p>Name. One sentence. Then 8–10 seconds of real silence. Repeating resets the clock.</p></div>
+    <div class="card"><strong><span class="n" style="background:#457B9D">2</span>Name first</strong><p>Say their name. Pause. Then the message. Never “look at me.”</p></div>
+    <div class="card"><strong><span class="n" style="background:#1D3557">3</span>Say less</strong><p>One idea. Literal words. “Paddle, then car.” — not a long hint.</p></div>
+    <div class="card"><strong><span class="n" style="background:#E76F51">4</span>Comment, don’t quiz</strong><p>Share a thought: “That paddle is yellow.” Tests raise pressure.</p></div>
+    <div class="card"><strong><span class="n" style="background:#2D6A4F">5</span>Show it</strong><p>First → Then. Two choices they can point to. A timer they can see.</p></div>
+    <div class="card"><strong><span class="n" style="background:#1B4332">6</span>Honor every attempt</strong><p>Word, gesture, AAC, body turn, a wave. If it meant something, answer it.</p></div>
+  </div>
+  <div class="listen">
+    <div class="kicker">LISTENING ≠ STARING</div>
+    We do not force eye contact. Teach “look toward the person” and “turn your body toward them.” A nod, “mm,” or AAC button still counts as a turn.
+  </div>
+  <div class="grid">
+    <div class="card navy"><strong>Reinforce the skill</strong><p>Never punish the miss. Name it: “You waited.” “You switched.” “Nice hi.”</p></div>
+    <div class="card navy"><strong>Parents carry it</strong><p>You are the change agent. Skills stick when family delivers them (Stokes & Baer, 1977).</p></div>
+    <div class="card navy"><strong>Generalize on purpose</strong><p>Same words on court and at dinner. New person, new place — on purpose.</p></div>
+    <div class="card navy"><strong>Teach in real life</strong><p>Pickleball is the classroom. Naturalistic teaching — not a worksheet.</p></div>
+  </div>
+  <footer>Dr. Elbert Basa · (818) 640-8947 · basamd@protonmail.com</footer>
+</article>
+</div>
+</body>
+</html>
